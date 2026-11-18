@@ -5,7 +5,7 @@ function hasTwoCubeSums(n) {
   for (let a = 1; a <= limit; a++) {
     const a3 = a  3;
     for (let b = a + 1; b <= limit; b++) {
-      if (a3 + b  3 === n) {
+      if (a3 + b**3 === n) {
         count++;
         if (count === 2) return true;
       }
